@@ -1,0 +1,233 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    min-height: 100vh; /*body part takes full height of website*/
+    background-color: #f0f0f5;
+    color: #333;
+}
+
+.myHeader {
+    background-color: blueviolet;
+    color: #fff;
+    padding: 1.7rem;
+    position: fixed;
+    top: 0; /*Header part stays at the top*/
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1000; /*it makes the header part above the other contents*/
+}
+
+header nav a{
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 0.75em;
+    margin-left: 1rem;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 1rem;
+}
+
+.logo {
+    color: #000000;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; /* space between the logo and the bank string */
+    margin-bottom: 15px;
+}
+
+/* Style and position the currency box */
+.currency-bar {
+    width: 15%;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    position: fixed; /* Keeps it in view while we scrolling */
+    top: 100px; /* Distance from the top of the viewport */
+    bottom: 40px;
+    left: 0; /* Distance from the left of the viewport */
+    text-align: center;
+    overflow-y: auto; /*if content is getting out of border, it helps us to fix it*/
+}
+
+.currency {
+    color: #000000;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+.currency-logo {
+    top: 300px;
+    width: 60px;
+    height: 60px;
+    margin-right: 3px;
+    margin-top: 3rem;
+
+}
+  
+.currency h3 {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #974dd8;
+    top: 300px;
+    margin-top: 3rem;
+    margin-right: 20px;
+    
+}
+
+.currency-bar ul {
+    list-style: none;
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.currency-bar ul li {
+    margin-bottom: 0.5rem;
+}
+
+.main-content {
+    margin: 2rem 15% 0 15%;
+    padding-top: 2rem; /*according to value of header padding*/
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+    margin-top: 80px;
+    flex: 1; /*it fills the space*/
+}
+
+
+.main-content h2 {
+    font-size: 2em;
+    color: #4a22a5;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+  
+.account-cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-right: 4.5rem;
+}
+  
+.at-card {
+    background-color: #fff;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(19, 19, 19, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+  
+.at-card h3 {
+    font-size: 1.2em;
+    color: #4a22a5;
+    margin-bottom: 0.5rem;
+}
+  
+.at-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.relational-bar {
+    height: 100vh;
+    width: 20%;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    overflow-y: auto;
+    top: 4.5rem;
+    right: 0;
+    gap: 0.1rem;
+    padding: 1.2rem;
+}
+
+.rb-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(19, 19, 19, 0.1);
+    margin-bottom: 1rem;
+    margin-top: 2.75rem;
+    align-items: center;
+}
+
+.rb-icons {
+    display: flex;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.rb-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 0;
+}
+
+.rb-card h3 {
+    font-size: 1.2em;
+    color: #974dd8;
+    margin-bottom: 1rem;
+}
+
+.rb-card p {
+    font-size: 0.9em;
+    color: #333;
+}
+
+.operation {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(19, 19, 19, 0.1);
+}
+
+.operation p {
+    margin: 5px 0;
+    font-size: 0.7em;
+}
+  
+.myFooter {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.8rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0; /*makes the footer at the bottom*/
+}
+
+.myFooter-nav a{
+    color: #ddddddd6;
+    text-decoration: none;
+    margin: 0 0.5em;
+    font-size: 0.8rem;
+}
